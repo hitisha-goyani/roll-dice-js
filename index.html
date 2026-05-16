@@ -1,0 +1,77 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Roll Dice App</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <div class="container">
+
+    <h1>Roll Dice</h1>
+
+    <!-- Dice Box -->
+ <!-- REPLACE OLD DICE WRAPPER -->
+
+<div class="dice-wrapper" id="diceWrapper">
+
+  <div class="dice" id="dice1">
+    <div class="dot center"></div>
+  </div>
+
+</div>
+
+    <!-- Button -->
+    <button id="rollBtn">
+      Roll Dice
+      <i class="fa-solid fa-rotate-right"></i>
+    </button>
+
+    <!-- Bottom Option -->
+    <div class="bottom-box">
+
+      <div class="mini-dice">
+        🎲
+      </div>
+
+      <span>x</span>
+
+     <select id="diceCount">
+
+  <option value="1">1</option>
+
+  <option value="2">2</option>
+
+  <option value="3">3</option>
+
+  <option value="4">4</option>
+
+  <option value="5">5</option>
+
+  <option value="6">6</option>
+
+</select>
+
+    </div>
+
+    <!-- Result -->
+    <p id="result">Result : 1</p>
+
+  </div>
+
+  <!-- Audio -->
+  <audio id="diceSound">
+    <source src="https://assets.mixkit.co/active_storage/sfx/2003/2003-preview.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
